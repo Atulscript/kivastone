@@ -1,0 +1,202 @@
+/* Bootstrap 4.6.2 CSS - We've installed it via npm, so we can import it in main.tsx */
+
+@font-face {
+  font-family: "Madesaonara";
+  src: url("./assets/MADESAONARA.otf");
+}
+
+@font-face {
+  font-family: "NexaBold";
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/nexa/NexaBold.otf");
+}
+
+@font-face {
+  font-family: "NexaLight";
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/nexa/NexaLight.otf");
+}
+
+@font-face {
+  font-family: "Nexa";
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/nexa/nexaregular.otf");
+}
+
+:root {
+  --color-bg: #000;
+  --color-fg: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.container-keva {
+  padding: 0 80px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.dropdown-item {
+  background-color: transparent;
+  border: 0;
+  clear: both;
+  color: #212529 !important;
+  display: block;
+  font-weight: 400;
+  padding: 4px 8px;
+  text-align: inherit;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.dropdown-nav-item {
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.nav-link-dropdown button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-top: 2px;
+  padding: 0;
+}
+
+.navigation-dark .nav-link-dropdown button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #000;
+  border: 0;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-top: 2px;
+  padding: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-link-dropdown button:hover,
+.nav-link-dropdown button:focus,
+.nav-link-dropdown button:active,
+.nav-link-dropdown .dropdown-toggle {
+  background-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navigation-dark .nav-link-dropdown button:hover,
+.navigation-dark .nav-link-dropdown button:focus,
+.navigation-dark .nav-link-dropdown button:active,
+.navigation-dark .nav-link-dropdown .dropdown-toggle {
+  background-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #000 !important;
+  font-weight: bolder !important;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 240px) {
+  .nav-link-dropdown button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    padding: 0;
+  }
+
+  .dropdown-item {
+    margin: 0;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .dropdown-nav-item {
+    text-align: center;
+    padding: 4px 0;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .container-keva {
+    padding: 0 60px;
+    width: 100%;
+  }
+
+  .navigation-dark .nav-link-dropdown button:hover,
+  .navigation-dark .nav-link-dropdown button:focus,
+  .navigation-dark .nav-link-dropdown button:active,
+  .navigation-dark .nav-link-dropdown .dropdown-toggle {
+    background-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    font-weight: bolder !important;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container-keva {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+
+/* Slick Carousel Overrides */
+.slick-dots li button:before {
+  color: #fff !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff !important;
+}
+
+/* WOW.js / Animate.css Overrides */
+.wow {
+  visibility: hidden;
+}
+
+.scroll-line,
+.dot {
+  display: none !important;
+}
+
+#root {
+  height: auto;
+  overflow: hidden;
+}
+
+.x-hidden {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-text {
+  writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: #fff;
+  top: 65vh;
+  left: 34px;
+  font-family: NexaLight;
+  position: absolute;
+  transform: rotate(180deg);
+}
