@@ -124,10 +124,10 @@ function App() {
         <div className="visualizatin-container">
           <VisualizeStone />
         </div>
-      </div>
 
-      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
-        <VisitShowRoom />
+        <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+          <VisitShowRoom />
+        </div>
       </div>
 
       <FooterSection />
