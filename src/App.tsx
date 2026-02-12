@@ -49,6 +49,7 @@ function App() {
       <NavBar />
       <img className="header-shadow" src="sha.png" alt="Shadow" />
 
+      <div className="top-line scroll-line"></div>
       <div className="scroll-text">SCROLL</div>
       <div className="first-line scroll-line"></div>
 

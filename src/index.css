@@ -177,13 +177,18 @@ body {
 .scroll-line {
   position: absolute;
   margin-left: 40px;
-  z-index: 0;
-  border-left: 2px solid rgb(227, 227, 227);
+  z-index: 10;
+  /* Definitely above everything */
+  border-left: 2.5px solid #fff;
+}
+
+.top-line {
+  top: 0;
+  height: 65vh;
 }
 
 .first-line {
-  border-left: 2px solid #fff;
-  margin-top: calc(65vh + 90px);
+  margin-top: calc(65vh + 100px);
   height: 200px;
 }
 
@@ -207,13 +212,13 @@ body {
 .dot {
   height: 15px;
   width: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   border-radius: 50%;
-  border: 1px solid black;
+  border: none;
   display: inline-block;
   position: relative;
   margin-left: 34px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .dot-one-top {
@@ -242,11 +247,13 @@ body {
 .scroll-text {
   writing-mode: vertical-lr;
   letter-spacing: 5px;
-  font-size: 10px;
+  font-size: 11px;
   color: #fff;
+  font-weight: bold;
   top: 65vh;
   left: 34px;
   font-family: NexaLight;
   position: absolute;
   transform: rotate(180deg);
+  z-index: 2;
 }
