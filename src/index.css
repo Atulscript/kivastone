@@ -33,7 +33,7 @@
 
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: #000;
   color: #000;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -179,6 +179,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.content-wrapper {
+  background-color: #fff;
 }
 
 .scroll-line-white {
