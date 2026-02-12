@@ -174,34 +174,27 @@ body {
 }
 
 /* Scroll Line Styles */
-.scroll-line {
+.header-wrapper,
+.content-wrapper {
+  position: relative;
+}
+
+.scroll-line-white {
+  position: absolute;
+  margin-left: 40px;
+  z-index: 0;
+  border-left: 2px solid #fff;
+  margin-top: calc(65vh + 90px);
+  bottom: 0;
+}
+
+.scroll-line-gray {
   position: absolute;
   margin-left: 40px;
   z-index: 0;
   border-left: 2px solid rgb(227, 227, 227);
-}
-
-.first-line {
-  border-left: 2px solid #fff;
-  margin-top: calc(65vh + 90px);
-  height: 200px;
-}
-
-.second-line {
-  height: 400px;
-}
-
-.third-line {
-  height: 600px;
-}
-
-.fourth-line {
-  height: 800px;
-}
-
-.fifth-line {
-  height: 400px;
-  top: -190px;
+  top: 0;
+  bottom: 0;
 }
 
 .dot {
