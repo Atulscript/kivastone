@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="x-hidden">
       <NavBar />
-      <img className="header-shadow" src="/sha.png" alt="Shadow" />
+      <img className="header-shadow" src="sha.png" alt="Shadow" />
 
       <div className="scroll-text">SCROLL</div>
       <div className="first-line scroll-line"></div>
@@ -76,7 +76,7 @@ function App() {
           <TypeTile tileName="Porcelain" imageUrl="https://i.ibb.co/TMQYXRD/b.png" url="imperia" />
           <TypeTile tileName="Semi Precious" imageUrl="https://i.ibb.co/DtWN22R/a.png" url="inventory/semi-precious" />
           <TypeTile tileName="Granites & Dolomites" imageUrl="https://i.ibb.co/pQvWM5Y/c.png" url="inventory/granite-dolomites" />
-          <TypeTile tileName="Quartzite" imageUrl="/quartzite.png" url="inventory/quartzite" />
+          <TypeTile tileName="Quartzite" imageUrl="quartzite.png" url="inventory/quartzite" />
           <TypeTile tileName="Marble" imageUrl="https://i.ibb.co/dsvh9jn/e.png" url="inventory/marble" />
         </Slider>
       </div>
@@ -108,15 +108,15 @@ function App() {
           </div>
 
           <div className="collection-list mobile">
-            <Tile tileCode="#ABC1275" tileName="Blue Deep" imageUrl="/bluedeep.png" category_code="QUARTZITE" />
-            <Tile tileCode="#34567" tileName="Venatino" imageUrl="/venatino.png" category_code="QUARTZ" />
-            <Tile tileCode="#34569" tileName="Calacatta Michelangelo" imageUrl="/Michelangelo.png" category_code="PORCELAIN" className="uneven" />
+            <Tile tileCode="#ABC1275" tileName="Blue Deep" imageUrl="bluedeep.png" category_code="QUARTZITE" />
+            <Tile tileCode="#34567" tileName="Venatino" imageUrl="venatino.png" category_code="QUARTZ" />
+            <Tile tileCode="#34569" tileName="Calacatta Michelangelo" imageUrl="Michelangelo.png" category_code="PORCELAIN" className="uneven" />
           </div>
         </div>
       </div>
 
-      <OurCollection collectionText="Our signature quartz collection" imageUrl1="/l-logo.png" imageUrl2="/pexel.jpg" url="levante" />
-      <OurCollection collectionText="Our signature collection" imageUrl1="/i-logo.png" imageUrl2="/imperia-1.png" url="imperia" />
+      <OurCollection collectionText="Our signature quartz collection" imageUrl1="l-logo.png" imageUrl2="pexel.jpg" url="levante" />
+      <OurCollection collectionText="Our signature collection" imageUrl1="i-logo.png" imageUrl2="imperia-1.png" url="imperia" />
 
       <span className="dot dot-three-top"></span>
 

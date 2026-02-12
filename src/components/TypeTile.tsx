@@ -1,23 +1,23 @@
 import React from 'react';
 
 interface TypeTileProps {
-    tileName: string;
-    imageUrl: string;
-    url: string;
+  tileName: string;
+  imageUrl: string;
+  url: string;
 }
 
 const TypeTile: React.FC<TypeTileProps> = ({ tileName, imageUrl, url }) => {
-    const pageView = (page: string) => {
-        window.location.href = `/${page}`;
-    };
+  const pageView = (page: string) => {
+    window.location.href = `/${page}`;
+  };
 
-    return (
-        <div className="" onClick={() => pageView(url)}>
-            <div className="type-tile-box text-center">
-                <div className="tile-name text-uppercase">{tileName}</div>
-                <img className="tile-image" src={imageUrl.startsWith('http') ? imageUrl : `/${imageUrl}`} alt={tileName} />
-            </div>
-            <style>{`
+  return (
+    <div className="" onClick={() => pageView(url)}>
+      <div className="type-tile-box text-center">
+        <div className="tile-name text-uppercase">{tileName}</div>
+        <img className="tile-image" src={imageUrl.startsWith('http') ? imageUrl : (imageUrl.startsWith('/') ? imageUrl.substring(1) : imageUrl)} alt={tileName} />
+      </div>
+      <style>{`
         .type-tile-box {
           border: 1px;
           background-color: rgb(250, 249, 249);
@@ -52,8 +52,8 @@ const TypeTile: React.FC<TypeTileProps> = ({ tileName, imageUrl, url }) => {
           object-fit: cover;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default TypeTile;

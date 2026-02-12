@@ -25,7 +25,7 @@ const VisualizeStone: React.FC = () => {
         <div>YOUR</div>
         <div>STONE</div>
       </div>
-      <img className="visualizer-image" src="/3dvisualizer.png" alt="3D Visualizer" />
+      <img className="visualizer-image" src="3dvisualizer.png" alt="3D Visualizer" />
       <button className="btn know-more-button">ENTER VISUALIZER</button>
       <div className="row">
         <div className="col-lg-6 col-md-3 hide-mobile"></div>

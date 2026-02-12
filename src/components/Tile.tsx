@@ -17,8 +17,8 @@ const Tile: React.FC<TileProps> = ({ tileName, tileCode, imageUrl, category_code
   const getImgUrl = (url: string) => {
     if (!url) return '';
     if (url.startsWith('http')) return url;
-    if (url.startsWith('/')) return url;
-    return `/${url}`;
+    if (url.startsWith('/')) return url.substring(1);
+    return url;
   };
 
   return (
@@ -38,7 +38,7 @@ const Tile: React.FC<TileProps> = ({ tileName, tileCode, imageUrl, category_code
         Item Code {tileCode}
       </div>
       <span className="image-top">
-        <img className="tile-image" src={getImgUrl(imageUrl)} alt={tileName} />
+        <img className="tile-image" src={imageUrl.startsWith('http') ? imageUrl : (imageUrl.startsWith('/') ? imageUrl.substring(1) : imageUrl)} alt={tileName} />
       </span>
       <style>{`
         .tile-box {

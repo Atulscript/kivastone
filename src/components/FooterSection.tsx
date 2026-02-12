@@ -1,58 +1,58 @@
 import React from 'react';
 
 const FooterSection: React.FC = () => {
-    const locations = [
-        { name: 'Texas', url: 'http://kivastone.stoneprofitsweb.com/' },
-        { name: 'Florida', url: 'http://kivastonefl.stoneprofitsweb.com/' },
-        { name: 'Illinois', url: 'http://kivastonech.stoneprofitsweb.com/' },
-        { name: 'Ohio', url: 'https://kivaohio.stoneprofitsweb.com/' },
-    ];
-    const info = ["About", "Stories", "Blog", "Contact", "Privacy-Policy", "Terms-and-Conditions"];
+  const locations = [
+    { name: 'Texas', url: 'http://kivastone.stoneprofitsweb.com/' },
+    { name: 'Florida', url: 'http://kivastonefl.stoneprofitsweb.com/' },
+    { name: 'Illinois', url: 'http://kivastonech.stoneprofitsweb.com/' },
+    { name: 'Ohio', url: 'https://kivaohio.stoneprofitsweb.com/' },
+  ];
+  const info = ["About", "Stories", "Blog", "Contact", "Privacy-Policy", "Terms-and-Conditions"];
 
-    const pageView = (page: string) => {
-        window.location.href = `/${page === 'about' ? 'experience' : page.toLowerCase()}`;
-    };
+  const pageView = (page: string) => {
+    window.location.href = `/${page === 'about' ? 'experience' : page.toLowerCase()}`;
+  };
 
-    const toUrl = (url: string) => {
-        window.open(url, '_blank');
-    };
+  const toUrl = (url: string) => {
+    window.open(url, '_blank');
+  };
 
-    return (
-        <div className="footer-box mt-5">
-            <div className="footer-head">
-                <img src="/kiva-white-logo-v2.png" width="120" alt="Kiva Logo" />
-                <img className="country-logo" src="/kiva-white-country-logo-v2.png" width="100" alt="Country Logo" />
+  return (
+    <div className="footer-box mt-5">
+      <div className="footer-head">
+        <img src="kiva-white-logo-v2.png" width="120" alt="Kiva Logo" />
+        <img className="country-logo" src="kiva-white-country-logo-v2.png" width="100" alt="Country Logo" />
+      </div>
+      <div className="footer-list mb-5">
+        {info.map((pageName) => (
+          <div key={pageName}>
+            <div className="mt-5 text-uppercase footer-text footer-text-right" onClick={() => pageView(pageName)}>
+              {pageName}
             </div>
-            <div className="footer-list mb-5">
-                {info.map((pageName) => (
-                    <div key={pageName}>
-                        <div className="mt-5 text-uppercase footer-text footer-text-right" onClick={() => pageView(pageName)}>
-                            {pageName}
-                        </div>
-                    </div>
-                ))}
-            </div>
+          </div>
+        ))}
+      </div>
 
-            <div className="locations-wrapper">
-                {locations.map((loc) => (
-                    <div key={loc.name} className="mb-4 footer-text mobile-text" onClick={() => toUrl(loc.url)}>
-                        {loc.name}
-                    </div>
-                ))}
-            </div>
+      <div className="locations-wrapper">
+        {locations.map((loc) => (
+          <div key={loc.name} className="mb-4 footer-text mobile-text" onClick={() => toUrl(loc.url)}>
+            {loc.name}
+          </div>
+        ))}
+      </div>
 
-            <div className="text-right footer-bottom mobile-icon">
-                <a target="_blank" href="https://www.linkedin.com/company/kiva-stone/" rel="noreferrer">
-                    <i className="fab fa-linkedin mr-3"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/kivastonedallas" rel="noreferrer">
-                    <i className="fab fa-facebook-f mr-3"></i>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/kivastonedallas/" rel="noreferrer">
-                    <i className="fab fa-instagram"></i>
-                </a>
-            </div>
-            <style>{`
+      <div className="text-right footer-bottom mobile-icon">
+        <a target="_blank" href="https://www.linkedin.com/company/kiva-stone/" rel="noreferrer">
+          <i className="fab fa-linkedin mr-3"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/kivastonedallas" rel="noreferrer">
+          <i className="fab fa-facebook-f mr-3"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/kivastonedallas/" rel="noreferrer">
+          <i className="fab fa-instagram"></i>
+        </a>
+      </div>
+      <style>{`
         .footer-head {
           display: flex;
           justify-content: space-between;
@@ -105,8 +105,8 @@ const FooterSection: React.FC = () => {
           .footer-bottom { text-align: center; }
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default FooterSection;

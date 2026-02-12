@@ -72,7 +72,7 @@ const InspirationSection: React.FC<InspirationSectionProps> = ({ firstText, main
         </div>
       ) : (
         <div className="section">
-          {['/p5.png', '/p2.png', '/p10.png', '/partner/retailor.jpg', '/p6.png', '/p7.png'].map((img, index) => (
+          {['p5.png', 'p2.png', 'p10.png', 'partner/retailor.jpg', 'p6.png', 'p7.png'].map((img, index) => (
             <div key={index} className="image-margin">
               <img
                 className="section-image"

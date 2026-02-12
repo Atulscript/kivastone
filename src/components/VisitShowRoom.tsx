@@ -33,7 +33,7 @@ const VisitShowRoom: React.FC = () => {
           </div>
         </div>
         <div className="image-showroom-wrapper">
-          <img className="image-showroom" src="/showroom.png" alt="Showroom" />
+          <img className="image-showroom" src="showroom.png" alt="Showroom" />
         </div>
       </div>
       <style>{`

@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
         data-aos-once="true"
       >
         <a href="/">
-          <img src="/kiva-white-logo-v2.png" className="margin-logo" alt="Kiva Logo" />
+          <img src="kiva-white-logo-v2.png" className="margin-logo" alt="Kiva Logo" />
         </a>
         <div className="links">
           <div className="ml-3 mr-3 hide-class">
