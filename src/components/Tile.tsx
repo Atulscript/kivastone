@@ -11,7 +11,7 @@ interface TileProps {
 
 const Tile: React.FC<TileProps> = ({ tileName, tileCode, imageUrl, category_code, className }) => {
   const goToInventoryDetail = (path: string) => {
-    window.location.href = `/inventory/${path}`;
+    window.location.href = `inventory/${path}`;
   };
 
   const getImgUrl = (url: string) => {
@@ -38,7 +38,7 @@ const Tile: React.FC<TileProps> = ({ tileName, tileCode, imageUrl, category_code
         Item Code {tileCode}
       </div>
       <span className="image-top">
-        <img className="tile-image" src={imageUrl.startsWith('http') ? imageUrl : (imageUrl.startsWith('/') ? imageUrl.substring(1) : imageUrl)} alt={tileName} />
+        <img className="tile-image" src={getImgUrl(imageUrl)} alt={tileName} />
       </span>
       <style>{`
         .tile-box {

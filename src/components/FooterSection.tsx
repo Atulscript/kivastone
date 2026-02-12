@@ -10,7 +10,7 @@ const FooterSection: React.FC = () => {
   const info = ["About", "Stories", "Blog", "Contact", "Privacy-Policy", "Terms-and-Conditions"];
 
   const pageView = (page: string) => {
-    window.location.href = `/${page === 'about' ? 'experience' : page.toLowerCase()}`;
+    window.location.href = page === 'about' ? 'experience' : page.toLowerCase();
   };
 
   const toUrl = (url: string) => {

@@ -8,14 +8,14 @@ interface TypeTileProps {
 
 const TypeTile: React.FC<TypeTileProps> = ({ tileName, imageUrl, url }) => {
   const pageView = (page: string) => {
-    window.location.href = `/${page}`;
+    window.location.href = page;
   };
 
   return (
     <div className="" onClick={() => pageView(url)}>
       <div className="type-tile-box text-center">
         <div className="tile-name text-uppercase">{tileName}</div>
-        <img className="tile-image" src={imageUrl.startsWith('http') ? imageUrl : (imageUrl.startsWith('/') ? imageUrl.substring(1) : imageUrl)} alt={tileName} />
+        <img className="tile-image" src={imageUrl.startsWith('http') || imageUrl.startsWith('data:') ? imageUrl : (imageUrl.startsWith('/') ? imageUrl.substring(1) : imageUrl)} alt={tileName} />
       </div>
       <style>{`
         .type-tile-box {

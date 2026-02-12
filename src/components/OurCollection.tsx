@@ -15,14 +15,14 @@ const OurCollection: React.FC<OurCollectionProps> = ({ collectionText, imageUrl1
   }, []);
 
   const pageView = (page: string) => {
-    window.location.href = `/${page}`;
+    window.location.href = page;
   };
 
   const getImgUrl = (url: string) => {
     if (!url) return '';
     if (url.startsWith('http')) return url;
-    if (url.startsWith('/')) return url;
-    return `/${url}`;
+    if (url.startsWith('/')) return url.substring(1);
+    return url;
   };
 
   return (
