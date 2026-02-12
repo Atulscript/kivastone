@@ -20,12 +20,12 @@ const NavBar: React.FC = () => {
         data-aos-duration="800"
         data-aos-once="true"
       >
-        <a href="/">
+        <a href="./">
           <img src="kiva-white-logo-v2.png" className="margin-logo" alt="Kiva Logo" />
         </a>
         <div className="links">
           <div className="ml-3 mr-3 hide-class">
-            <a href="/">HOME</a>
+            <a href="./">HOME</a>
           </div>
           <div className="ml-3 mr-3 hide-class">
             <div className="dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
@@ -45,19 +45,19 @@ const NavBar: React.FC = () => {
             </div>
           </div>
           <div className="ml-3 mr-3 hide-class">
-            <a href="/inventory">COLLECTION</a>
+            <a href="inventory">COLLECTION</a>
           </div>
           <div className="ml-3 mr-3 hide-class">
-            <a href="/experience">EXPERIENCE</a>
+            <a href="experience">EXPERIENCE</a>
           </div>
           <div className="ml-3 mr-3 hide-class">
-            <a href="/sourcing">SOURCING</a>
+            <a href="sourcing">SOURCING</a>
           </div>
           <div className="ml-3 mr-3 hide-class">
-            <a href="/partner-program">PARTNER PROGRAM</a>
+            <a href="partner-program">PARTNER PROGRAM</a>
           </div>
           <div className="ml-3 mr-3 hide-class">
-            <a href="/contact">CONTACT</a>
+            <a href="contact">CONTACT</a>
           </div>
         </div>
       </div>

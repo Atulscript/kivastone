@@ -50,7 +50,7 @@ function App() {
       <img className="header-shadow" src="sha.png" alt="Shadow" />
 
       <div className="scroll-text">SCROLL</div>
-      <div className="continuous-line scroll-line"></div>
+      <div className="first-line scroll-line"></div>
 
       <div className="video-container video-desktop">
         <iframe
@@ -67,7 +67,7 @@ function App() {
         ></iframe>
       </div>
 
-
+      <div className="second-line scroll-line"></div>
       <span className="dot dot-one-top"></span>
 
       <div className="carousel-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-once="true">
@@ -81,13 +81,13 @@ function App() {
         </Slider>
       </div>
 
-
+      <div className="third-line scroll-line"></div>
       <div className="inspiration mt-4">
         <InspirationSection isHome={true} mainText="Space" firstText="Find your" />
       </div>
 
       <span className="dot dot-two-top"></span>
-
+      <div className="fourth-line scroll-line"></div>
 
       <div className="container-fluid">
         <div className="collection-container mt-5 mb-5">
@@ -121,7 +121,7 @@ function App() {
       <span className="dot dot-three-top"></span>
 
       <div className="visualizatin-container">
-
+        <div className="fifth-line scroll-line"></div>
         <VisualizeStone />
       </div>
 

@@ -16,7 +16,7 @@ const MobileNavBar: React.FC = () => {
       {visible && (
         <div className="collapse-item show">
           <div className="row nav-box m-0">
-            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="/">HOME</a></div>
+            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="./">HOME</a></div>
             <div className="col-12 mb-2 mt-2 text-center border-nav">
               <div className="dropdown">
                 <button
@@ -34,11 +34,11 @@ const MobileNavBar: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 mb-2 mt-2 text-center border-nav"> <a href="/inventory">COLLECTION</a></div>
-            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="/experience">EXPERIENCE</a></div>
-            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="/sourcing">SOURCING</a></div>
-            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="/partner-program">PARTNER PROGRAM</a></div>
-            <div className="col-12 mb-2 mt-2 text-center border-nav"> <a href="/contact">CONTACT</a></div>
+            <div className="col-12 mb-2 mt-2 text-center border-nav"> <a href="inventory">COLLECTION</a></div>
+            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="experience">EXPERIENCE</a></div>
+            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="sourcing">SOURCING</a></div>
+            <div className="col-12 mb-2 mt-2 text-center border-nav"><a href="partner-program">PARTNER PROGRAM</a></div>
+            <div className="col-12 mb-2 mt-2 text-center border-nav"> <a href="contact">CONTACT</a></div>
           </div>
         </div>
       )}
