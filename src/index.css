@@ -173,9 +173,59 @@ body {
   visibility: hidden;
 }
 
-.scroll-line,
+/* Scroll Line Styles */
+.scroll-line {
+  position: absolute;
+  margin-left: 40px;
+  z-index: 0;
+  border-left: 2px solid rgb(227, 227, 227);
+}
+
+.first-line {
+  border-left: 2px solid #fff;
+  margin-top: calc(65vh + 90px);
+  height: 200px;
+}
+
+.second-line {
+  height: 400px;
+}
+
+.third-line {
+  height: 600px;
+}
+
+.fourth-line {
+  height: 800px;
+}
+
+.fifth-line {
+  height: 400px;
+  top: -190px;
+}
+
 .dot {
-  display: none !important;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+  margin-left: 34px;
+  z-index: 1;
+}
+
+.dot-one-top {
+  top: 332px;
+}
+
+.dot-two-top {
+  top: 180px;
+}
+
+.dot-three-top {
+  top: 160px;
 }
 
 #root {
