@@ -178,35 +178,17 @@ body {
   position: absolute;
   margin-left: 40px;
   z-index: 10;
-  /* Definitely above everything */
+  /* Above all content */
   border-left: 2.5px solid #fff;
 }
 
-.top-line {
-  top: 0;
-  height: 65vh;
-}
-
-.first-line {
-  margin-top: calc(65vh + 100px);
-  height: 200px;
-}
-
-.second-line {
-  height: 400px;
-}
-
-.third-line {
-  height: 600px;
-}
-
-.fourth-line {
-  height: 800px;
-}
-
-.fifth-line {
-  height: 400px;
-  top: -190px;
+.continuous-line {
+  top: calc(65vh + 90px);
+  /* Start just below SCROLL text */
+  height: 100%;
+  /* Extend through entire page */
+  min-height: 3000px;
+  /* Ensure it's long enough for all content */
 }
 
 .dot {
